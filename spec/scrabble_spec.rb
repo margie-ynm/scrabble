@@ -27,4 +27,7 @@ describe('String#scrabble') do
   it('returns a scrabble score for a word') do
     expect("hello".scrabble()).to(eq(8))
   end
+  it('returns correct score regardless of case') do
+    expect("heLlO".scrabble()).to(eq(8))
+  end
 end
